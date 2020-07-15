@@ -2,8 +2,8 @@ h1 {
     text-align: center;
 }
 
-div {
-    text-align: left;
+body {
+  background-color: hotpink;
 }
 
 #faultyItems {
@@ -28,9 +28,16 @@ div {
     padding: 10px;
 }
 
+#planet {
+  display: inline-block;
+  text-align: left;
+}
+
 #missionTarget img {
     max-width: 40%;
     max-height: 250px;
+    display: block;
+    margin: auto;
 }
 
 #missionTarget {
@@ -51,3 +58,5 @@ button {
     height: 30px;
     margin: 10px 0;
 }
+
+
