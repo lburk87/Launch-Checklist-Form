@@ -2,14 +2,12 @@ h1 {
     text-align: center;
 }
 
-body {
-  background-color: hotpink;
+div {
+    text-align: center;
 }
 
 #faultyItems {
-    visibility: hidden;  
-    display: inline-block;
-    text-align: left;  
+    visibility: hidden;   
 }
 
 #launchForm {
@@ -30,23 +28,16 @@ body {
     padding: 10px;
 }
 
-#planet {
-  display: inline-block;
-  text-align: left;
-}
-
 #missionTarget img {
-    max-width: 40%;
-    max-height: 250px;
-    display: block;
-    margin: auto;
+    max-width: 50%;
+    max-height: 550px;
 }
 
 #missionTarget {
     background-color: #ECF0F1;
     text-align: center;
     margin: 50px auto;
-    width: 50%;
+    width: 40%;
     border: 3px solid black;
     padding: 10px;
 }
@@ -61,4 +52,6 @@ button {
     margin: 10px 0;
 }
 
-
+body {
+    background-color: hotpink;
+}
