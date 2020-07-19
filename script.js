@@ -20,19 +20,10 @@ window.addEventListener("load", function() {
     if (isNaN(cargoMass.value)) {
      alert("Cargo Mass Invalid");
     };
-    function allLetters(inputtxt) { 
-      var letters = /^[A-Za-z]+$/;
-      let name = inputtxt;
-      if(name.match(letters)) {
-      return true;
-      } else {
-      return false;
-      }
+     if (isNaN(pilotName.value) === false) {
+      alert("Invalid Pilot Name");
     };
-    if (allLetters(pilotName.value) === false) {
-     alert("Invalid Pilot Name");
-    };
-    if (allLetters(copilotName.value) === false) {
+    if (isNaN(copilotName.value) === false) {
       alert("Invalid Co-Pilot Name");
     };
     event.preventDefault();
