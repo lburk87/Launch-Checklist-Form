@@ -55,3 +55,9 @@ button {
 body {
     background-color: hotpink;
 }
+
+#planetData {
+  display: inline-block;
+  text-align: left;
+}
+

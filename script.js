@@ -59,7 +59,7 @@ window.addEventListener("load", function() {
        let i = Math.floor(Math.random() * 6);
        newDiv.innerHTML = `
        <h2>Mission Destination</h2>
-        <ol>
+        <ol id = "planetData">
          <li>Name: ${json[i].name}</li>
          <li>Diameter: ${json[i].diameter}</li>
          <li>Star: ${json[i].star}</li>
