@@ -26,8 +26,8 @@ window.addEventListener("load", function() {
     else if (isNaN(copilotName.value) === false) {
       alert("Invalid Co-Pilot Name");
     } else {
-    document.getElementById("pilotStatus").innerHTML = `${pilotName.value} ready`;
-    document.getElementById("copilotStatus").innerHTML = `${copilotName.value} ready`;
+    document.getElementById("pilotStatus").innerHTML = `Pilot ${pilotName.value} ready`;
+    document.getElementById("copilotStatus").innerHTML = `Co-Pilot ${copilotName.value} ready`;
     launchStatus.style.color = "green";
     launchStatus.innerHTML = "Shuttle ready for launch";
     faultyItems.style.visibility = "visible"
@@ -59,7 +59,7 @@ window.addEventListener("load", function() {
        let i = Math.floor(Math.random() * 6);
        newDiv.innerHTML = `
        <h2>Mission Destination</h2>
-        <ol class = "centerList">
+        <ol class="centeredList">
          <li>Name: ${json[i].name}</li>
          <li>Diameter: ${json[i].diameter}</li>
          <li>Star: ${json[i].star}</li>
