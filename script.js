@@ -12,7 +12,7 @@ window.addEventListener("load", function() {
     let fuelStatus = document.getElementById("fuelStatus");
     let cargoStatus = document.getElementById("cargoStatus");
     if (pilotName.value === "" || copilotName.value === "" || fuelLevel.value === "" || cargoMass.value === "") {
-      alert("All fields required. Please refresh page and try again.");
+      alert("All fields required. Page will refresh.");
     }
     else if (isNaN(fuelLevel.value)) {
       alert("Fuel Level Invalid"); 
