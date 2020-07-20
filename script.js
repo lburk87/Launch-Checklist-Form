@@ -12,21 +12,20 @@ window.addEventListener("load", function() {
     let fuelStatus = document.getElementById("fuelStatus");
     let cargoStatus = document.getElementById("cargoStatus");
     if (pilotName.value === "" || copilotName.value === "" || fuelLevel.value === "" || cargoMass.value === "") {
-      alert("All fields required. Please refresh page and try again.");  
-    };
-    if (isNaN(fuelLevel.value)) {
+      alert("All fields required. Please refresh page and try again.");
+    }
+    else if (isNaN(fuelLevel.value)) {
       alert("Fuel Level Invalid"); 
-    };
-    if (isNaN(cargoMass.value)) {
+    }
+    else if (isNaN(cargoMass.value)) {
      alert("Cargo Mass Invalid");
-    };
-     if (isNaN(pilotName.value) === false) {
+    }
+    else if (isNaN(pilotName.value) === false) {
       alert("Invalid Pilot Name");
-    };
-    if (isNaN(copilotName.value) === false) {
+    } 
+    else if (isNaN(copilotName.value) === false) {
       alert("Invalid Co-Pilot Name");
-    };
-    event.preventDefault();
+    } else {
     document.getElementById("pilotStatus").innerHTML = `${pilotName.value} ready`;
     document.getElementById("copilotStatus").innerHTML = `${copilotName.value} ready`;
     launchStatus.style.color = "green";
@@ -47,6 +46,8 @@ window.addEventListener("load", function() {
       launchStatus.style.color = "red";
     } else {
       cargoStatus.innerHTML = "Cargo mass low enough for launch";
+    };
+      event.preventDefault()
     };
    });
   });
@@ -81,4 +82,3 @@ window.addEventListener("load", function() {
   </ol>
   <img src="${}">
   */
-  
